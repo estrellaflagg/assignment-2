@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Humber Cakes</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"
+    ></script>
+  </head>
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Humber Cakes</div>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <!-- Image sourced from SwapnIl Dwivedi on Unsplash.com -->
+        <img src="assets/swapnil-dwivedi-Nl8Oa6ZuNcA-unsplash.jpg" alt="Image of a cake." width=100%>
+      </section>
+      <section id="hero" class="hero">
+        <img src="assets/Comp 1/Comp 1_00000.png" id="animatedImage">
+        <div class="hero-content">
+          <h1>Gourmet Cakes</h1>
+          <p>
+            Indulge in one-of-a-kind artisanal cakes made by students with locally sourced ingredients for your next celebration.
+          </p>
+          <button type="button">Shop Collection</button>
+        </div>
+      </section>
+      <section id="products" class="products">
+        <h2>Best Sellers</h2>
+        <div class="product-grid">
+          <article class="product-card">
+            <model-viewer src="assets/chocolate.glb" ar camera-controls></model-viewer>
+            <h3>Black Forest</h3>
+            <p>
+              Layers of chocolate sponge decorated with whipped cream frosting,
+              dark chocolate and fresh cherries.
+            </p>
+            <span>$30</span>
+          </article>
+          <article class="product-card">
+            <model-viewer src="assets/wedding-cake.glb" ar camera-controls></model-viewer>
+            <h3>Vanilla Wedding Cake</h3>
+            <p>
+              Light and fluffy vanilla bean sponge with Swiss buttercream frosting.
+            </p>
+            <span>$100</span>
+          </article>
+          <article class="product-card">
+            <model-viewer src="assets/flower-25.glb" ar camera-controls></model-viewer>
+            <h3>Lemon Bouquet</h3>
+            <p>
+              Bright lemon poppy sponge with lemon curd filling and vanilla buttercream.
+            </p>
+            <span>$70</span>
+          </article>
+          <article class="product-card">
+            <model-viewer src="assets/blackforest.glb" ar camera-controls></model-viewer>
+            <h3>Chocolate</h3>
+            <p>
+              Chocolate sponge and hazelnut cream rolls topped with chocolate mousse and
+              mocha biscuits.
+            </p>
+            <span>$30</span>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer id="contact">
+      <p>© 2025 Humber Cakes. Crafted with love and cocoa.</p>
+    </footer>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
